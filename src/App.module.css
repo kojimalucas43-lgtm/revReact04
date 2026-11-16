@@ -1,0 +1,7 @@
+.wraphome{
+    background-color: var(--dark);
+    color: var(--light);
+    min-height: 100vh;
+    height: auto;
+}
+
