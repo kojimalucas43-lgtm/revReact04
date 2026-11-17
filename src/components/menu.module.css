@@ -7,4 +7,7 @@
     background-color: var(--light);
     color: var(--azul);
     box-shadow: var(--sombra);
+    left: 0;
+    top: 0;
+    width: 100%;
 }

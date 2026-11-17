@@ -1,12 +1,13 @@
 import s from'./menu.module.css'
+import { Link } from 'react-router'
 
 export const Menu = () => {
     return(
         <nav className={s.menu}>
-            <a href='/'>Home</a>
-            <a href=''>Instituição</a>
-            <a href=''>produtos</a>
-            <a href=''>contatos</a>
+            <Link to='/'>Home</Link>
+            <Link to='/charts'>Gráficos</Link>
+            <Link to=''>produtos</Link>
+            <Link to=''>contLinktos</Link>
         </nav>
     )
 }
