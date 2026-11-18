@@ -7,7 +7,7 @@ function App() {
     <>
       <Menu/>
         <div className={s.wraphome}>
-        
+          
         </div>
     </>
     

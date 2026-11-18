@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import s from './Charts.module.css'
 import  { Menu } from './components/menu'
+import  { GBarra } from './components/barChart'
+import  { GPizza } from './components/pizzaChar'
+import  { GLinha } from './components/lineChart'
 
 function Charts(){
 
-const [show, setShow] = useState("")
+    const [show, setShow] = useState("")
 
     return(
         <>
@@ -12,15 +15,14 @@ const [show, setShow] = useState("")
 
             <div className={s.wrapCharts}>
                 <div className={s.wrapBtns}>
-                    <button onClick={() => setShow("BAR")}>BAR</button>
-                    <button onClick={() => setShow("PIZZA")}>PIZZA</button>
-                    <button onClick={() => setShow("LINE")}>LINE</button>
+                    <button className={s.btn} onClick={() => setShow("BAR")}>BAR</button>
+                    <button className={s.btn} onClick={() => setShow("PIZZA")}>PIZZA</button>
+                    <button className={s.btn} onClick={() => setShow("LINE")}>LINE</button>
                 </div>
-
                 
-                {show === "BAR" && <h1>Gráf BAR</h1>}
-                {show === "PIZZA" && <h1>Gráf PIZZA</h1>}
-                {show === "LINE" && <h1>Gráf LINE</h1>}
+                {show === "BAR" && <GBarra/>}
+                {show === "PIZZA" && <GPizza/> }
+                {show === "LINE" && <GLinha/>}
 
             </div>
         </>
