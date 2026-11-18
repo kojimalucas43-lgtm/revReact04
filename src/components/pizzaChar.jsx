@@ -1,15 +1,9 @@
 import { Pie, PieChart, Cell, Tooltip } from 'recharts';
+import pieDados from '../mock/piDados.json'
 
 const RADIAN = Math.PI / 180;
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#d3038e'];
 
-const data = [
-  { label: 'JAN', x: 200},
-  { label: 'FEV', x: 100},
-  { label: 'MAR', x: 600},
-  { label: 'ABR', x: 800},
-  { label: 'MAI', x: 30},
-];
 
 const renderCustomizedLabel = ({
   cx,
@@ -55,14 +49,14 @@ export const GPizza = ({ isAnimationActive = true }) => {
       <Tooltip />
 
       <Pie
-        data={data}
+        data={pieDados}
         dataKey="x"
         nameKey="label"
         labelLine={false}
         label={renderCustomizedLabel}
         isAnimationActive={isAnimationActive}
       >
-        {data.map((entry, index) => (
+        {pieDados.map((entry, index) => (
           <Cell
             key={entry.label}
             fill={COLORS[index % COLORS.length]}
