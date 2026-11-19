@@ -10,19 +10,43 @@ function App() {
         <div className={s.wraphome}>
           <div className={s.section1}>
               <div className={s.wrapImage}>
-                <img className={s.imgSection} src={bannerImg} alt=''/>
+                <img className={s.imgSection} src={bannerImg} alt='banr'/>
               </div>
               <div className={s.wrapTexts}>
                 <h1 className={s.tituloSection1}>Title</h1>
-                <p className={s.textSection1}>lorem fds</p>
+                <p className={s.textSection1}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum. </p>
                 <button className={s.btnSection1}>CLIQUE</button>
               </div>
           </div>
 
-          <div className={s.setion2}>
+          <div className={s.section2}>
             <iframe className={s.vid} src="https://www.youtube.com/embed/Ti2vjkcGiOo?si=nB8LIN0WvByUppzj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
+          <div className={s.section3}>
+            <div className={s.wrapImage}>
+                <img className={s.imgSection2} src={bannerImg} alt=''/>
+              </div>
+              <div className={s.wrapTexts2}>
+                <h1 className={s.tituloSection2}>Title</h1>
+                <p className={s.textSection2}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+              </div>
+          </div>
+
+          <div className={s.section4}>
+            <div className={s.card}>
+              <h1 className={s.titulos}>Lorem</h1>
+              <p className={s.paragrafo}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+            </div>
+            <div className={s.card}>
+              <h1 className={s.titulos}>Ipsum</h1>
+              <p className={s.paragrafo}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+            </div>
+            <div className={s.card}>
+              <h1 className={s.titulos}>Amet</h1>
+              <p className={s.paragrafo}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
         </div>
     </>
     
