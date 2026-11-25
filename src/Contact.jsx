@@ -16,17 +16,23 @@ function Contact(){
     }
 
     return(
-        <div className={s.formulario}>
+        <div className={s.wrapContact}>
+            <Menu/>
+
+            <div className={s.formulario}>
             <div className={s.wrapInputs}>
                 <label htmlFor='nome'>Nome</label>
-                <input type="text" placeholder='INsira seu nome' value={nome} onChange={(e) => setNome(e.target.value)}/>
+                <input className={s.inputData} type="text" placeholder='INsira seu nome' value={nome} onChange={(e) => setNome(e.target.value)}/>
             </div>
 
             <div className={s.wrapInputs}>
                 <label htmlFor='assunto'>Assunto</label>
-                <input type="text" placeholder='INsira o assunto' value={nome} onChange={(e) => setNome(e.target.value)}/>
+                <input className={s.textAreaData} type="text" placeholder='INsira o assunto' value={nome} onChange={(e) => setNome(e.target.value)}/>
             </div>
+            <button className={s.btn} onClick={enviar}>ENVIAR</button>
         </div>
+        </div>
+        
     )
 }
 
