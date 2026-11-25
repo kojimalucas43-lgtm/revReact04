@@ -14,6 +14,10 @@ const router = createBrowserRouter([
     path: "/Charts",
     element: <Charts/>,
   },
+  {
+    path: "/Contact",
+    element: <Charts/>,
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(

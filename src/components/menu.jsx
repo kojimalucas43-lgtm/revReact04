@@ -7,7 +7,7 @@ export const Menu = () => {
             <Link to='/'>Home</Link>
             <Link to='/charts'>Gráficos</Link>
             <Link to=''>produtos</Link>
-            <Link to=''>contLinktos</Link>
+            <Link to='/contact'>contLinktos</Link>
         </nav>
     )
 }

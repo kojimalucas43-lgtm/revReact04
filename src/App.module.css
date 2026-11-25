@@ -130,6 +130,59 @@
     padding: 20px;
 }
 
+.mapa{
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapCont{
+    width: 80%;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+}
+
+.mapaSection {
+  width: 100%;
+  grid-column: 1 / -1; /* Caso .section4 seja um grid */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.mapControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mapBtn {
+  padding: 8px 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #222;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.activeBtn {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #fff;
+}
+
+.mapa2 {
+  width: 100%;
+}
+
+
 @media (width <= 1000px) {
     .section1{
     min-height: 50vh;
@@ -145,6 +198,12 @@
     }
     .section2{
         padding: 10px;
+    }
+    .mapCont{
+    width: 80%;
+    height: 80vh;
+    border-radius: 0px;
+    box-shadow: var(--sombra);
     }
 }
 
