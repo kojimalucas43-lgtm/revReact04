@@ -1,24 +1,16 @@
 import s from './Products.module.css'
-import test from '/bannerImg.jpg'
-import Tilt from 'react-parallax-tilt';
+import  { Menu } from './components/menu'
+import  {Card } from './components/menu'
 
 function Products(){
     return(
-       <section className={s.wrapProducts}>
-       <Tilt tiltReverse perspective={200} >
+        <>
+        <Menu/>
 
-            <div className={s.card}>
-                <div className={s.wrapImg}>
-                    <img className={s.imagem} src={test} alt='img prod'/>
-                </div>
-                <div className={s.wrpaCardTexts}>
-                    <h2 className={s.cardTitle}>TITLE</h2>
-                    <p className={s.cardText}>IYYFTUFCUCUCUTUY</p>
-                </div>
-            </div>
-            
-        </Tilt>
-       </section>
+        <section className={s.wrapProducts}>
+            <Card/>
+        </section>
+       </>
     )
 }
 
