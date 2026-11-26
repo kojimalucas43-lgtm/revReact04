@@ -8,7 +8,7 @@ function Products(){
         <Menu/>
 
         <section className={s.wrapProducts}>
-            <Card/>
+            <Card imagem={teste} titulo="" texto="" />
         </section>
        </>
     )
