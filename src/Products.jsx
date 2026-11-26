@@ -1,6 +1,6 @@
 import s from './Products.module.css'
 import  { Menu } from './components/menu'
-import  {Card } from './components/menu'
+import  {Card } from './components/card'
 
 function Products(){
     return(
