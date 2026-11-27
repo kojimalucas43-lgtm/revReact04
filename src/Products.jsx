@@ -1,6 +1,7 @@
 import s from './Products.module.css'
 import  { Menu } from './components/menu'
 import  {Card } from './components/card'
+import dados from './mock/produtos.json'
 
 function Products(){
     return(
@@ -8,7 +9,16 @@ function Products(){
         <Menu/>
 
         <section className={s.wrapProducts}>
-            <Card imagem={teste} titulo="" texto="" />
+
+            {dados.map((item) => {
+                return(
+                    <div key={item.id}>
+                        <Card imagem={item.imagem} titulo={item.titulo} texto={item.texto}/>
+                    </div>                 
+                )
+            })}
+            
+           
         </section>
        </>
     )
